@@ -1,4 +1,3 @@
-In [37]:
 dfa = {
     'a':{0:'a',1:'b'},
     'b':{0:'c',1:'b'},
@@ -15,10 +14,8 @@ def myfunc2(r):
     for i in s:
         ins = dfa[ins][int(i)]
     if ins in fis:
-        return True
+        return 'Accepted'
     else:
-        return False
+        return 'Not Accepted'
 
-myfunc2('01011111100101011011101')
-Out[37]:
-True
+print(myfunc2('01011111100101011011101'))
