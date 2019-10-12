@@ -5,4 +5,4 @@ def counts(num):
     ones = [format.count('1') for n in range(1<<m)]
 	print(zeros)
 	print(ones)
-	
+counts('10101000110')
